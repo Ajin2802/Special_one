@@ -4,9 +4,9 @@ import './App.css';
 // TO DO:
 // 1. Host your chosen song online (e.g., Dropbox, Google Drive direct link, or put it in your /public folder)
 // 2. Paste the link to the audio file here:
-const SONG_URL = 'marudhaani-marudhaani_jBNVCQDn.mp3';
+const SONG_URL = `${import.meta.env.BASE_URL}marudhaani-marudhaani_jBNVCQDn.mp3`;
 // 3. Actual photo from public folder path
-const PHOTO_URL = 'birthday-photo.jpeg';
+const PHOTO_URL = `${import.meta.env.BASE_URL}birthday-photo.jpeg`;
 
 function App() {
   const [cardStage, setCardStage] = useState('envelope'); // envelope, open, message
