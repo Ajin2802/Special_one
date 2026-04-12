@@ -1,12 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
+import songFile from '../public/marudhaani-marudhaani_jBNVCQDn.mp3?url';
+import photoFile from '../public/birthday-photo.jpeg?url';
 
 // TO DO:
-// 1. Host your chosen song online (e.g., Dropbox, Google Drive direct link, or put it in your /public folder)
-// 2. Paste the link to the audio file here:
-const SONG_URL = './marudhaani-marudhaani_jBNVCQDn.mp3';
-// 3. Actual photo from public folder path
-const PHOTO_URL = './birthday-photo.jpeg';
+// Asset URLs are imported directly from public folder
+const SONG_URL = songFile;
+// Photo URL
+const PHOTO_URL = photoFile;
 
 function App() {
   const [cardStage, setCardStage] = useState('envelope'); // envelope, open, message
