@@ -4,9 +4,11 @@ import './App.css';
 // TO DO:
 // 1. Host your chosen song online (e.g., Dropbox, Google Drive direct link, or put it in your /public folder)
 // 2. Paste the link to the audio file here:
-const SONG_URL = '/marudhaani-marudhaani_jBNVCQDn.mp3';
+const SONG_URL = './marudhaani-marudhaani_jBNVCQDn.mp3';
 // 3. Actual photo from public folder path
-const PHOTO_URL = '/birthday-photo.jpeg';
+const PHOTO_URL = './birthday-photo.jpeg';
+// 4. Gift drawing from school days
+const GIFT_DRAWING_URL = './WhatsApp Image 2026-04-13 at 5.23.07 PM.jpeg';
 
 function App() {
   const [cardStage, setCardStage] = useState('envelope'); // envelope, open, message
@@ -96,7 +98,7 @@ function App() {
               <div className="message-body">
                 <p>I wanted to make something unique for you because you’re a truly wonderful person, even from thousands of miles away.</p>
                 <p className="divider">✦✦✦</p>
-                <p>To be honest with myself and you, I’ve had feelings for you from the first time I saw you in the Sunday Class in 4th Standard, it was in the our church's shool second floor we had our Sunday Class and I saw you for the first time you were in a Yellow Frock it was really the barbie doll came out of the move and walking near church like feelings and most of the time I even came to church just to see you and joined in the Peedasiragal just you joined and kept you as a role model even in studies to score atleast one mark ahead of you and did many things and these I was scared that our firendship would broke and not told these things and I am not able to keep it insdie so thought of just telling you.
+                <p>To be honest with myself and you, I’ve had feelings for you from the first time I saw you in the Sunday Class in 4th Standard, it was in the our church's shool second floor we had our Sunday Class and I saw you for the first time you were in a Yellow Frock it was really the barbie doll came out of the move and walking near church like feelings and most of the time I even came to church just to see you and joined in the Peedasiragal just you joined and kept you as a role model even in studies to score atleast one mark ahead of you and did many things like in our 10th on your birthday thought of giving you an gift and made an gift but not gave to you added an image of that also kudukalam nu vanda inda Anto vera chocolate lam vangitu edo panitu irudan apo vei heavy competition tha 😅 adu vera problem achu na pana gift ta kudukavei illa aprom 11th la ne same school varuva nu lam think panavei illa daily um summa pakuradu idula maths sir vera class ulla irukavei vida mataru 11th la Rathin aven vera suthuna un pinadi ei 😄 solanum nu try panen but thairiyam illa ipo kuda tha ada idu ellam and I was scared that our firendship would broke and did not told these things and I am not able to keep it insdie so thought of just telling you, oru movie pathen recent ah With Love nu,  manasukullaei vaikuratha vida solita ok nu oru scene irundu enaku solidalam nu thonuchu atha 🙂...
                    </p>
                 <p>I know you’re happy in your relationship, and I sincerely respect that.
                    I didn't send this to change anything, but simply because I felt it was
@@ -105,6 +107,17 @@ function App() {
               </div>
 
               <p className="signature">- Ajin Jeeslin</p>
+
+              <div className="gift-section">
+                <div className="gift-divider">✦✦✦</div>
+                <div className="gift-label">🎁 The Gift I Made For You during 10th Standard</div>
+                <img
+                  src={GIFT_DRAWING_URL}
+                  alt="Gift drawing from school"
+                  className="gift-drawing"
+                  onError={(event) => { event.currentTarget.style.display = 'none'; }}
+                />
+              </div>
             </div>
           </div>
         </div>

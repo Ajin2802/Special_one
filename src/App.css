@@ -345,7 +345,7 @@ body, html {
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 32px;
   box-shadow: 0 20px 80px rgba(0, 0, 0, 0.25);
-  width: min(100%, 920px);
+  width: min(100%, 1100px);
   text-align: left;
 }
 
@@ -383,6 +383,29 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0.5rem;
+  height: 100%;
+}
+
+.text-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.text-panel::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.text-panel::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.text-panel::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .card-heading {
@@ -400,6 +423,10 @@ body, html {
 
   .card-content {
     width: min(100%, 100%);
+  }
+
+  .text-panel {
+    max-height: 500px;
   }
 }
 
@@ -463,4 +490,39 @@ body, html {
 
 .tap-instruction {
   color: #d7d3ff;
+}
+
+/* --- GIFT SECTION IN SCROLLABLE CONTENT --- */
+.gift-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gift-divider {
+  text-align: center;
+  letter-spacing: 0.45em;
+  color: #b0a6ff;
+  margin-bottom: 1rem;
+}
+
+.gift-label {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e8e8ff;
+  margin-bottom: 1rem;
+}
+
+.gift-drawing {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  transition: transform 0.35s ease;
+  margin-top: 1rem;
+}
+
+.gift-drawing:hover {
+  transform: scale(1.03);
 }
